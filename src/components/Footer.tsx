@@ -128,7 +128,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">&copy; 2025 Adalet Hukuk. Tüm hakları saklıdır.</p>
+          <p className="text-gray-400 text-sm">&copy; 2025 AcrTech. Tüm hakları saklıdır.</p>
           <div className="flex gap-6 text-sm text-gray-400">
             <a href="#" className="hover:text-white transition-colors">Gizlilik Politikası</a>
             <a href="#" className="hover:text-white transition-colors">Kullanım Koşulları</a>
