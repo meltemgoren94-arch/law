@@ -14,7 +14,8 @@ export function Hero() {
       <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-yellow-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* DUZELTME 1: lg:grid-cols-2 yerine md:grid-cols-2 yapıldı */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="text-left">
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 shadow-sm">
               <Shield className="w-4 h-4 text-amber-600" />
@@ -55,7 +56,9 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative hidden lg:block">
+          {/* DUZELTME 2: hidden lg:block yerine hidden md:block yapıldı. 
+              Artık tablet ve küçük laptoplarda da görünecek. */}
+          <div className="relative hidden md:block">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1756633231294-f72b004e8c5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXclMjBqdXN0aWNlJTIwY291cnRob3VzZXxlbnwxfHx8fDE3NjQ3NTc0NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
