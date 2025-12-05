@@ -17,7 +17,8 @@ const services = [
     subtitle: 'Mersin Boşanma Avukatı',
     description: 'Aile hukuku uyuşmazlıklarında önceliğimiz, süreci müvekkillerimiz için en az yıpratıcı şekilde yönetmektir.',
     details: 'Çekişmeli Boşanma & İstinaf Süreci',
-    image: 'https://embarrassing-gold-bopujb7hnj-ac3xqymtkx.edgeone.dev/BOS%CC%A7ANMA%20VE%20AI%CC%87LE%20HUKUKU.png',
+    // Guncellendi: Calismayan .png yerine Unsplash gorseli geri getirildi
+    image: 'https://images.unsplash.com/photo-1633158108216-f10cd3202d8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW1pbHklMjBsYXclMjBkb2N1bWVudHN8ZW58MXx8fHwxNzY0ODMwMjY0fDA&ixlib=rb-4.1.0&q=80&w=1080',
     gradient: 'from-purple-600 to-pink-600'
   },
   {
@@ -26,7 +27,8 @@ const services = [
     subtitle: 'Mersin Ticaret Avukatı',
     description: 'Mersin’in ticari dinamiklerine hakim ofisimiz, şirketlerin kuruluşundan tasfiyesine kadar tüm süreçlerde yanınızdadır.',
     details: 'Şirketler Hukuku & Danışmanlık',
-    image: 'https://witty-pink-jnxvm4y4ff-ebah21rohg.edgeone.dev/TI%CC%87CARET%20VE%20S%CC%A7I%CC%87RKET%20HUKUKU.png',
+    // Guncellendi: Calismayan .png yerine Unsplash gorseli geri getirildi
+    image: 'https://images.unsplash.com/photo-1758518731462-d091b0b4ed0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGxhdyUyMGNvbnRyYWN0fGVufDF8fHx8MTc2NDgzMDI2NHww&ixlib=rb-4.1.0&q=80&w=1080',
     gradient: 'from-orange-600 to-red-600'
   }
 ];
@@ -63,7 +65,11 @@ export function Services() {
               </div>
               
               <div className="p-8 flex flex-col flex-grow">
-                {/* Başlık (Resim üzerinden buraya taşındı) */}
+                {/* Subtitle: Başlığın üstünde, 9px, sola hizalı ve amber renginde */}
+                <div className="text-[9px] text-amber-600 font-bold uppercase tracking-widest mb-2 text-left">
+                  {service.subtitle}
+                </div>
+
                 <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight uppercase">
                   {service.title}
                 </h3>
@@ -77,16 +83,11 @@ export function Services() {
                   {service.details}
                 </div>
 
-                <div className="mt-auto flex items-end justify-between">
+                <div className="mt-auto">
                     <button className="group/btn flex items-center gap-2 text-gray-800 hover:text-amber-600 hover:gap-3 transition-all font-medium">
                     Detaylı Bilgi
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                     </button>
-
-                    {/* Subtitle: Sağ alt köşede, 9px ve açık gri */}
-                    <div className="text-[9px] text-gray-400 font-medium uppercase tracking-wide text-right max-w-[120px] leading-tight">
-                    {service.subtitle}
-                    </div>
                 </div>
               </div>
             </div>

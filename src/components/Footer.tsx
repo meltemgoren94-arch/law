@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Info } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -126,13 +126,24 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">&copy; 2025 Adalet Hukuk. Tüm hakları saklıdır.</p>
-          <div className="flex gap-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">Gizlilik Politikası</a>
-            <a href="#" className="hover:text-white transition-colors">Kullanım Koşulları</a>
-          </div>
+        {/* Bottom Bar Wrapper */}
+        <div className="border-t border-gray-800 pt-8">
+            {/* Copyright & Links */}
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
+                <p className="text-gray-400 text-sm">&copy; 2025 Adalet Hukuk. Tüm hakları saklıdır.</p>
+                <div className="flex gap-6 text-sm text-gray-400">
+                    <a href="#" className="hover:text-white transition-colors">Gizlilik Politikası</a>
+                    <a href="#" className="hover:text-white transition-colors">Kullanım Koşulları</a>
+                </div>
+            </div>
+
+            {/* Legal Disclaimer Section */}
+            <div className="flex items-start justify-center gap-2 text-[9px] text-gray-500 max-w-5xl mx-auto text-center leading-relaxed border-t border-gray-800/50 pt-6">
+                <Info className="w-3 h-3 flex-shrink-0 mt-0.5 text-gray-600" />
+                <p>
+                   <span className="font-bold text-gray-400">Yasal Uyarı:</span> "Bu internet sitesinde yer alan bilgiler, yalnızca bilgilendirme amaçlıdır ve hukuki tavsiye niteliği taşımaz. Bu sitedeki hiçbir bilgi, reklam amacı gütmez ve Türkiye Barolar Birliği'nin Reklam Yasağı Yönetmeliği'ne aykırı değildir. Site içeriğinin ziyaret edilmesi, avukat-müvekkil ilişkisi doğurmaz."
+                </p>
+            </div>
         </div>
       </div>
     </footer>
