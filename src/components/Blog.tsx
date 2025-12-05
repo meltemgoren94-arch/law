@@ -114,10 +114,10 @@ export function Blog() {
                     
                     <div className="flex gap-2">
                       <button className="flex-1 bg-gray-800 text-white px-4 py-2.5 rounded-xl hover:bg-gray-700 hover:shadow-lg transition-all text-sm">
-                        Devamını Oku
+                        Benzer
                       </button>
                       <button className="flex-1 bg-amber-600 text-white px-4 py-2.5 rounded-xl hover:bg-amber-700 transition-all text-sm">
-                        Benzer
+                        Devamı
                       </button>
                     </div>
                   </div>
